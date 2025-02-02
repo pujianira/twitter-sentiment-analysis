@@ -20,12 +20,7 @@ st.markdown("# 📂**1. Import & Load Dataset**🧩")
 st.markdown("**a. Import dataset**")
 
 # Memuat file CSV
-try:
-    df = pd.read_csv('telkomsel.csv')
-    st.success("✅ Dataset berhasil dimuat!")
-    st.write(df.head())  # Menampilkan beberapa baris pertama dataset
-except Exception as e:
-    st.error(f"❌ Gagal memuat dataset: {e}")
+df = pd.read_csv('telkomsel.csv')
 
 # Menampilkan dataset
 st.markdown("**b. Lima baris awal dari dataset**")
